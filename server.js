@@ -21,7 +21,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //connecting to MongoDB
-mongoose.connect('mongodb://<dbuser>:<dbpassword>%ds157268.mlab.com:57268/heroku_b6b6nl3d');
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds157268.mlab.com:57268/heroku_b6b6nl3d');
 
 //mongoose.connect('mongodb://localhost/scraped_news');
 
