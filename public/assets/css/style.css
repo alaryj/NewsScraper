@@ -11,6 +11,10 @@ body{
   main{
     flex: 1 0 auto;
   }
+
+  a{
+    color: navajowhite;
+  }
   
   .articleBody{
     height: 200px;
@@ -22,20 +26,20 @@ body{
   #nameComment{
     /*border-bottom: 2px solid #ec407a;*/
     font-weight: bold;
-    background: #ec407a;
+    background: navy;
     color: white;
   }
   
   /* label focus color */
   .input-field input[type=text]:focus + label {
-   color: #e91e63;
+   color: navy;
   }
   /* label underline focus color */
   .input-field input[type=text]:focus {
-   border-bottom: 1px solid #e91e63;
+   border-bottom: 1px solid navy;
    box-shadow: 0 1px 0 0 #000;
   }
   /* icon prefix focus color */
   .input-field .prefix.active {
-   color: #ec407a;
+   color: navy;
   }
