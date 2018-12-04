@@ -16,18 +16,6 @@ router.get('/', function(req, res) {
     res.redirect('/articles');
 });
 
-// router.get('/test-scrape', function(req, res) {
-//   request(result.link, function(error, response, html) {
-//     var $ = cheerio.load(html);
-
-//     $('.l-col__main').each(function(i, element){
-//       var result = {};
-
-//       console.log($(this).children('.c-entry-content').children('p').text());
-//     });
-//   });
-// });
-
 // A GET request to scrape the Verge website
 router.get('/scrape', function(req, res) {
     // First, we grab the body of the html with request

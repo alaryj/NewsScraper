@@ -21,9 +21,15 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //connecting to MongoDB
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds157268.mlab.com:57268/heroku_b6b6nl3d');
+// mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds157268.mlab.com:57268/heroku_b6b6nl3d');
 
 //mongoose.connect('mongodb://localhost/scraped_news');
+
+// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/NewsScraper";
+
+// Connect to the Mongo DB
+mongoose.connect(MONGODB_URI);
 
 
 var db = mongoose.connection;
